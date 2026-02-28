@@ -11,17 +11,25 @@ private int telefono;
 
 //contructor de la clase persona
 // contructor vacio
-Persona() {}
+public Persona() {}
 
 
-Persona(int cedula){
-this.cedula= cedula;
+public Persona(int cedula){
+    this.cedula = cedula;
 }
-// contructor con parametros cedula,nombre correo y telefono
-Persona (int cedula,String nombre,String correo,int telefono){
-this.cedula= cedula;
-this.nombre= nombre;
-this.correo= correo;
-this.telefono= telefono;
+// contructor con parametros cedula, nombre, correo y telefono
+public Persona(int cedula, String nombre, String correo, int telefono){
+    this.cedula = cedula;
+    this.nombre = nombre;
+    this.correo = correo;
+    this.telefono = telefono;
 }
+
+    // método que imprime en pantalla los valores del objeto
+    public void mostrarDatos() {
+        System.out.println("Cédula: " + cedula);
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Correo: " + correo);
+        System.out.println("Teléfono: " + telefono);
+    }
 }
