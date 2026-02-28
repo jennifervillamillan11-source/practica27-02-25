@@ -1,0 +1,14 @@
+# Carpeta target de Maven
+target/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.classpath
+*.project
+.settings/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
