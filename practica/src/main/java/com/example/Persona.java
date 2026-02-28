@@ -1,35 +1,27 @@
 package com.example;
 
 public class Persona {
-    private String nombre;
-    private String apellido;
-    private String documento;      // número de identidad
-    private int anioNacimiento;
+    
+// atributos de clase persona
+// caracteristicas  que identifican a una clase persona
+private int cedula;
+public String nombre;
+public String correo;
+private int telefono;
 
-    // constructor sin parámetros (por defecto)
-    // permite crear una Persona con valores iniciales vacíos o predeterminados
-    public Persona() {
-        // opcional: inicializar con valores por defecto
-        this.nombre = "";
-        this.apellido = "";
-        this.documento = "";
-        this.anioNacimiento = 0;
-    }
+//contructor de la clase persona
+// contructor vacio
+Persona() {}
 
-    // constructor que inicializa todos los atributos
-    public Persona(String nombre, String apellido,
-                   String documento, int anioNacimiento) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.documento = documento;
-        this.anioNacimiento = anioNacimiento;
-    }
 
-    // método que imprime en pantalla los valores del objeto
-    public void mostrarDatos() {
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Apellido: " + apellido);
-        System.out.println("Documento: " + documento);
-        System.out.println("Año de nacimiento: " + anioNacimiento);
-    }
+Persona(int cedula){
+this.cedula= cedula;
+}
+// contructor con parametros cedula,nombre correo y telefono
+Persona (int cedula,String nombre,String correo,int telefono){
+this.cedula= cedula;
+this.nombre= nombre;
+this.correo= correo;
+this.telefono= telefono;
+}
 }
